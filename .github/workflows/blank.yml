@@ -6,6 +6,8 @@ jobs:
     steps:
       - name: build image
         run: |
+          git config --global user.email "you@example.com"
+          git config --global user.name "Your Name"
           git clone https://github.com/gl-inet/gl-infra-builder.git
           cd gl-infra-builder
           python3 setup.py -c configs/config-wlan-ap-5.4.yml
