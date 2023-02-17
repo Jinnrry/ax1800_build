@@ -1,5 +1,5 @@
-on:
-
+name: CI
+on: [push]
 jobs:
   setpackage:
     runs-on: ubuntu-20.04
