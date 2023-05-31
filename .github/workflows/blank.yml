@@ -10,7 +10,7 @@ jobs:
           git config --global user.name "Your Name"
           git clone https://github.com/gl-inet/glbuilder.git
           cd glbuilder
-          sudo apt-get install apt install device-tree-compiler g++ ncurses-dev python asciidoc bash bc binutils bzip2 fastjar flex gawk gcc genisoimage gettext git intltool jikespg libgtk2.0-dev libncurses5-dev libssl-dev make mercurial patch perl-modules python2.7-dev rsync ruby sdcc subversion unzip util-linux wget xsltproc zlib1g-dev zlib1g-dev -y
+          sudo apt-get update && apt-get install apt install device-tree-compiler g++ ncurses-dev python asciidoc bash bc binutils bzip2 fastjar flex gawk gcc genisoimage gettext git intltool jikespg libgtk2.0-dev libncurses5-dev libssl-dev make mercurial patch perl-modules python2.7-dev rsync ruby sdcc subversion unzip util-linux wget xsltproc zlib1g-dev zlib1g-dev -y
           make V=s
       - name: Setup Debug Session
         uses: csexton/debugger-action@master
