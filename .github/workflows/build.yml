@@ -11,6 +11,10 @@ jobs:
           git clone https://github.com/gl-inet/glbuilder.git
           cp .config ./glbuilder/
           cd glbuilder
+          cd customer/source/
+          git clone https://github.com/fw876/helloworld.git
+          git clone https://github.com/coolsnowwolf/luci.git
+          cd ../../
           cat .config
           sudo apt-get update && sudo apt-get install zip device-tree-compiler g++ ncurses-dev python asciidoc bash bc binutils bzip2 fastjar flex gawk gcc genisoimage gettext git intltool jikespg libgtk2.0-dev libncurses5-dev libssl-dev make mercurial patch perl-modules python2.7-dev rsync ruby sdcc subversion unzip util-linux wget xsltproc zlib1g-dev zlib1g-dev -y
           make V=s
