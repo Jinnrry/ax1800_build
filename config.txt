@@ -517,8 +517,8 @@ CONFIG_SDKFEEDS_ax1800_4.2.1_gl_feeds_wlanap=y
 CONFIG_SDKFEEDS_ax1800_4.2.1_gl_feeds_common=y
 # end of Select feeds for SDK of ax1800 4.2.1
 
-# CONFIG_DOWNLOAD_FROM_AWS is not set
-CONFIG_DOWNLOAD_FROM_ALIYUN=y
+CONFIG_DOWNLOAD_FROM_AWS=y
+# CONFIG_DOWNLOAD_FROM_ALIYUN is not set
 
 #
 # Configure customer version information
