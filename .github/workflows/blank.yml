@@ -6,8 +6,6 @@ jobs:
     steps:
       - name: build image
         run: |
-          pwd
-          ls
           git clone https://github.com/gl-inet/glbuilder.git
           cd glbuilder
           wget https://raw.githubusercontent.com/Jinnrry/ax1800_build/main/config.txt
@@ -15,9 +13,7 @@ jobs:
           cat .config
           sudo apt-get update && sudo apt-get install zip device-tree-compiler g++ ncurses-dev python asciidoc bash bc binutils bzip2 fastjar flex gawk gcc genisoimage gettext git intltool jikespg libgtk2.0-dev libncurses5-dev libssl-dev make mercurial patch perl-modules python2.7-dev rsync ruby sdcc subversion unzip util-linux wget xsltproc zlib1g-dev zlib1g-dev -y
           make V=s
-          pwd
-          ls
-          zip -q -r output.zip ./
+          zip -q -r output.zip ./bin
       - name: Output
         uses: actions/upload-artifact@v3
         with:
