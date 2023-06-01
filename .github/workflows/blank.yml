@@ -4,6 +4,7 @@ jobs:
   setpackage:
     runs-on: ubuntu-20.04
     steps:
+      - uses: mxschmitt/action-tmate@v3
       - name: build image
         run: |
           pwd
