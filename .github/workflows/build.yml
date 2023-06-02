@@ -13,7 +13,7 @@ jobs:
           cd glbuilder
           cd customer/source/
           git clone https://github.com/fw876/helloworld.git
-          git clone https://github.com/coolsnowwolf/luci.git
+          #git clone https://github.com/coolsnowwolf/luci.git
           cd ../../
           cat .config
           rm -rf feeds/packages/lang/golang
