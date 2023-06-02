@@ -19,9 +19,9 @@ jobs:
           rm -rf feeds/packages/lang/golang
           cp -r ../golang ./feeds/packages/lang/
           sudo apt-get update && sudo apt-get install zip device-tree-compiler g++ ncurses-dev python asciidoc bash bc binutils bzip2 fastjar flex gawk gcc genisoimage gettext git intltool jikespg libgtk2.0-dev libncurses5-dev libssl-dev make mercurial patch perl-modules python2.7-dev rsync ruby sdcc subversion unzip util-linux wget xsltproc zlib1g-dev zlib1g-dev -y
-          make V=s
-      #- name: Setup tmate session
-      #  uses: mxschmitt/action-tmate@v3
+          #make V=s
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
       - name: Output
         uses: actions/upload-artifact@v3
         with:
